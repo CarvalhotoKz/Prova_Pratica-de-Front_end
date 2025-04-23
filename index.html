@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora de Gastos Mensais</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <h1 class="Titulo Pag">Calculadora de Gastos Mensais</h1>
 </head>
-
-    <h1>Calculadora de Gastos Mensais</h1>
-
 <body>
+        <section class="gastos">
+            <h2>Registrar Gastos</h2>
+            
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+                <option value="Transporte">Transporte</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Lazer">Lazer</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Outros">Outros</option>
+            </select>
 
-    <div>
-      <p>Descrição de produto:</p>
-      <input type="text" id="Descrição">
-      <p>Valor de produto</p>
-      <input type="text" id="Valor">
-      <p>Categoria de produto</p>
-      <input type="text" id="Categoria">
-      <p><button type="submit">Enviar</button></p>
-    </div>
+            <p><label for="descricao">Descrição</label></p>
+            <input type="text" id="descricao">
 
-     
+            <p><label for="valor">Valor (R$)</label></p>
+            <input type="number" id="valor">
 
-</body>
-</html>
+            <button id="adicionarGasto">Adicionar Gasto</button>
+        </section>
+
+        <section>
+            <h2>Gastos Totais</h2>
+            <p id="totalGastos">Total: R$ 0.00</p>
+        </section>
