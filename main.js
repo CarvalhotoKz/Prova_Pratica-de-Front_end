@@ -35,7 +35,6 @@ document.getElementById('adicionarGasto').addEventListener('click', () => {
         
         celulaExcluir.appendChild(botaoExcluir); 
 
-        
         valorInput.value = '';
         descricaoInput.value = '';
     } else {
