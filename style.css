@@ -1,0 +1,114 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.Titulo.Pag {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.gastos {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gastos h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.gastos label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.gastos select,
+.gastos input[type="text"],
+.gastos input[type="number"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.gastos button#adicionarGasto {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.gastos button#adicionarGasto:hover {
+    background-color: #218838;
+}
+
+section h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section#totalGastos {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
+
+section#tabelaGastos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Para tabelas grandes em telas pequenas */
+}
+
+#tabelaGastos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#tabelaGastos th,
+#tabelaGastos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabelaGastos th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+#tabelaGastos tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabelaGastos tbody tr:hover {
+    background-color: #e0f7fa;
+}
