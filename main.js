@@ -24,3 +24,21 @@ document.getElementById('adicionarGasto').addEventListener('click', () => {
         celulaCategoria.textContent = categoria;
         celulaDescricao.textContent = descricao;
         celulaValor.textContent = `R$ ${valor.toFixed(2)}`;
+
+        const botaoExcluir = document.createElement('button');
+        botaoExcluir.textContent = 'Excluir';
+        botaoExcluir.addEventListener('click', () => {
+            tabelaBody.deleteRow(novaLinha.rowIndex - 1); 
+            totalGastos -= valor; 
+            document.getElementById('totalGastos').textContent = `Total: R$ ${totalGastos.toFixed(2)}`;
+        });
+        
+        celulaExcluir.appendChild(botaoExcluir); 
+
+        
+        valorInput.value = '';
+        descricaoInput.value = '';
+    } else {
+        alert('Por favor, insira uma descrição e um valor válido.');
+    }
+});
